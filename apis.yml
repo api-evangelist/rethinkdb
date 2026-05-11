@@ -1,0 +1,136 @@
+aid: rethinkdb
+name: RethinkDB
+description: >-
+  RethinkDB is an open source, distributed document-oriented NoSQL database
+  designed for real-time applications, with push-based change feeds, native
+  JSON storage, and an expressive query language called ReQL. Applications
+  interact with RethinkDB through official client drivers (JavaScript,
+  Python, Java, Ruby) that speak the native JSON driver protocol over TCP,
+  rather than through an HTTP REST API. ReQL also includes an r.http
+  command that lets queries pull data from external HTTP APIs directly.
+type: Index
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+tags:
+  - Database
+  - NoSQL
+  - Document Database
+  - Real-Time
+  - Open Source
+  - Change Feeds
+  - ReQL
+url: >-
+  https://raw.githubusercontent.com/api-evangelist/rethinkdb/refs/heads/main/apis.yml
+created: '2026-05-11'
+modified: '2026-05-11'
+specificationVersion: '0.19'
+apis:
+  - aid: rethinkdb:reql
+    name: RethinkDB ReQL Driver API
+    description: >-
+      ReQL (RethinkDB Query Language) is the expressive query language
+      exposed by RethinkDB through official client drivers. Drivers
+      communicate with the RethinkDB server using a native JSON protocol
+      over TCP (default port 28015) rather than HTTP. ReQL supports
+      filtering, joins, aggregations, change feeds, and external HTTP
+      access via the r.http command.
+    humanURL: https://rethinkdb.com/api
+    baseURL: tcp://<your-rethinkdb-host>:28015
+    tags:
+      - ReQL
+      - Drivers
+      - Change Feeds
+      - JSON Protocol
+    properties:
+      - type: Documentation
+        url: https://rethinkdb.com/docs
+      - type: ReQL Command Reference
+        url: https://rethinkdb.com/api
+      - type: Introduction to ReQL
+        url: https://rethinkdb.com/docs/introduction-to-reql/
+      - type: External HTTP Access
+        url: https://rethinkdb.com/docs/external-api-access/
+      - type: Driver Protocol
+        url: https://rethinkdb.com/docs/driver-spec/
+
+common:
+  - type: Website
+    url: https://rethinkdb.com
+  - type: Documentation
+    url: https://rethinkdb.com/docs
+  - type: API Reference
+    url: https://rethinkdb.com/api
+  - type: Download
+    url: https://rethinkdb.com/docs/install/
+  - type: GitHub Organization
+    url: https://github.com/rethinkdb
+  - type: Source Code
+    url: https://github.com/rethinkdb/rethinkdb
+  - type: Documentation Source
+    url: https://github.com/rethinkdb/docs
+  - type: Community
+    url: https://rethinkdb.com/community/
+  - type: License
+    url: https://github.com/rethinkdb/rethinkdb/blob/next/LICENSE
+features:
+  - name: ReQL Query Language
+    description: >-
+      Chainable, composable query language with filtering, joins,
+      aggregations, geospatial queries, and subqueries.
+  - name: Change Feeds
+    description: >-
+      Subscribe to real-time updates on queries and tables so
+      applications can push changes directly to clients.
+  - name: Native JSON Storage
+    description: >-
+      Store and query JSON documents natively with schema flexibility
+      and secondary indexes.
+  - name: r.http External API Access
+    description: >-
+      Pull data from external HTTP APIs directly inside ReQL queries
+      with pagination, authentication, and streaming via cursors.
+  - name: Distributed Architecture
+    description: >-
+      Built-in sharding, replication, and automatic failover across
+      a cluster of RethinkDB nodes.
+  - name: Official Drivers
+    description: >-
+      Official client drivers for JavaScript, Python, Java, and Ruby
+      with community drivers for other languages.
+solutions:
+  - name: Real-Time Applications
+    description: >-
+      Power dashboards, multiplayer games, collaboration tools, and
+      live feeds using change feeds rather than polling.
+  - name: Document Store
+    description: >-
+      Store JSON documents with secondary indexes and flexible
+      schemas for content, catalogs, and user data.
+  - name: Operational Database
+    description: >-
+      Use as the operational store for distributed applications
+      requiring sharding and replication.
+useCases:
+  - name: Live Dashboards
+    description: >-
+      Stream query result changes directly to browser clients via
+      change feeds for live operational dashboards.
+  - name: Collaborative Editing
+    description: >-
+      Power multi-user real-time editing experiences where document
+      changes propagate immediately to all participants.
+  - name: External API Aggregation
+    description: >-
+      Use r.http inside ReQL queries to fetch and join data from
+      external REST APIs without an application-tier proxy.
+integrations:
+  - name: Node.js
+    description: Official rethinkdb-js driver with connection pooling
+  - name: Python
+    description: Official Python driver for ReQL
+  - name: Java
+    description: Official Java driver for ReQL
+  - name: Ruby
+    description: Official Ruby driver for ReQL
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com
