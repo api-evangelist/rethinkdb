@@ -57,11 +57,11 @@ common:
     url: https://rethinkdb.com
   - type: Documentation
     url: https://rethinkdb.com/docs
-  - type: API Reference
+  - type: APIReference
     url: https://rethinkdb.com/api
   - type: Download
     url: https://rethinkdb.com/docs/install/
-  - type: GitHub Organization
+  - type: GitHubOrganization
     url: https://github.com/rethinkdb
   - type: Source Code
     url: https://github.com/rethinkdb/rethinkdb
