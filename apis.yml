@@ -53,6 +53,8 @@ apis:
         url: https://rethinkdb.com/docs/driver-spec/
 
 common:
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/rethinkdb
   - type: Website
     url: https://rethinkdb.com
   - type: Documentation
