@@ -1,0 +1,74 @@
+aid: rethinkdb
+reviewed: '2026-05-29'
+reviewer: API Evangelist
+scope: AsyncAPI streaming surface assessment
+summary: >-
+  RethinkDB does not expose a documented public streaming surface suitable
+  for AsyncAPI modeling. Real-time push functionality (Changefeeds) is
+  delivered exclusively through the official client drivers, which speak a
+  proprietary JSON-over-TCP driver protocol. There is no public WebSocket,
+  Server-Sent Events, MQTT, AMQP, Kafka, or HTTP streaming endpoint
+  documented by the project.
+streaming:
+  hasPublicStreamingSurface: false
+  asyncApiModelable: false
+  reason: >-
+    The only streaming primitive RethinkDB offers is the Changefeed, which
+    is consumed via ReQL .changes() through an official driver. The driver
+    speaks a proprietary binary/JSON framing protocol over TCP on port
+    28015 (driver-spec). AsyncAPI bindings do not cover this proprietary
+    TCP driver protocol, so a faithful AsyncAPI document cannot be
+    produced without fabricating a transport that RethinkDB does not
+    actually expose.
+surfaces:
+  - name: ReQL Changefeeds
+    transport: Proprietary JSON driver protocol over TCP
+    port: 28015
+    public: false
+    asyncApiBindingAvailable: false
+    notes: >-
+      Driver-only. Consumed via r.table(...).changes() through official
+      JavaScript, Python, Java, or Ruby drivers. Not exposed as
+      WebSocket, SSE, Kafka, MQTT, or any AsyncAPI-supported transport.
+    references:
+      - https://rethinkdb.com/docs/changefeeds/javascript/
+      - https://rethinkdb.com/api/javascript/changes/
+      - https://rethinkdb.com/docs/driver-spec/
+  - name: HTTP Admin API
+    transport: HTTP
+    port: 8080
+    public: false
+    asyncApiBindingAvailable: false
+    notes: >-
+      The HTTP endpoint exposed by the RethinkDB server is the admin web
+      UI for cluster administration. It is not a public data or
+      streaming API and is not intended for application traffic. It does
+      not stream changefeed events.
+    references:
+      - https://rethinkdb.com/docs/security/
+  - name: r.http command
+    transport: Outbound HTTP from server
+    public: false
+    asyncApiBindingAvailable: false
+    notes: >-
+      r.http is an outbound HTTP client inside ReQL for pulling data
+      from external APIs. It is not an inbound streaming surface and
+      has no relevance to AsyncAPI modeling of RethinkDB itself.
+    references:
+      - https://rethinkdb.com/docs/external-api-access/
+decisions:
+  - action: Do not create an AsyncAPI specification for RethinkDB
+    rationale: >-
+      AsyncAPI requires a transport binding (WebSocket, Kafka, AMQP,
+      MQTT, HTTP, SSE, etc.). RethinkDB's only streaming surface uses a
+      proprietary TCP driver protocol with no AsyncAPI binding. Modeling
+      it would require inventing a transport the project does not
+      expose, which would misrepresent the provider.
+  - action: Leave apis.yml unchanged
+    rationale: >-
+      No spec was produced, so the apis.yml entry for the ReQL driver
+      API remains accurate as-is.
+notes: >-
+  If the upstream project ever ships a documented WebSocket or SSE
+  gateway for changefeeds (e.g., via a future Horizon-style proxy with
+  a public stable contract), this assessment should be revisited.
