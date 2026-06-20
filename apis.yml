@@ -9,7 +9,7 @@ description: >-
   rather than through an HTTP REST API. ReQL also includes an r.http
   command that lets queries pull data from external HTTP APIs directly.
 type: Index
-image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
 tags:
   - Database
   - NoSQL
