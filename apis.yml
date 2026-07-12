@@ -53,6 +53,8 @@ apis:
         url: https://rethinkdb.com/docs/driver-spec/
 
 common:
+  - type: DomainSecurity
+    url: security/rethinkdb-domain-security.yml
   - type: LinkedIn
     url: https://www.linkedin.com/company/rethinkdb
   - type: Website
@@ -73,6 +75,8 @@ common:
     url: https://rethinkdb.com/community/
   - type: License
     url: https://github.com/rethinkdb/rethinkdb/blob/next/LICENSE
+  - type: Blog
+    url: https://rethinkdb.com/blog
 features:
   - name: ReQL Query Language
     description: >-
