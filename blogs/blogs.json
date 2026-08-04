@@ -2,11 +2,11 @@
   "repo": "rethinkdb",
   "feeds": [
     {
-      "source": "https://rethinkdb.com/blog",
+      "source": "https://rethinkdb.com/feed.xml",
       "feed_url": "https://rethinkdb.com/feed.xml",
       "title": "",
       "saved": 0,
-      "method": "discovered"
+      "method": "feed"
     },
     {
       "source": "https://github.com/rethinkdb/rethinkdb/blob/next/LICENSE",
@@ -16,6 +16,6 @@
       "method": "none"
     }
   ],
-  "fetched": "2026-07-11T11:50:51Z",
-  "post_count": 25
+  "fetched": "2026-08-01T15:49:00Z",
+  "post_count": 59
 }
