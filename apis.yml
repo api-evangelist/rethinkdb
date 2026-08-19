@@ -33,7 +33,7 @@ url: >-
   https://raw.githubusercontent.com/api-evangelist/rethinkdb/refs/heads/main/apis.yml
 created: '2026-05-11'
 modified: '2026-05-11'
-specificationVersion: '0.19'
+specificationVersion: '0.23'
 apis:
   - aid: rethinkdb:reql
     name: RethinkDB ReQL Driver API
