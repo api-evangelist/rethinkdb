@@ -2,23 +2,21 @@
   "repo": "rethinkdb",
   "feeds": [
     {
-      "source": "https://rethinkdb.com/feed.xml",
-      "feed_url": "https://rethinkdb.com/feed.xml",
-      "title": "",
-      "saved": 0,
-      "method": "feed",
-      "nature": "vendor-blog",
-      "nature_basis": "path_blog"
-    },
-    {
       "source": "https://github.com/rethinkdb/rethinkdb/blob/next/LICENSE",
       "feed_url": "https://github.com/rethinkdb/rethinkdb/blob/next/LICENSE",
       "title": "",
       "saved": 0,
       "method": "none"
+    },
+    {
+      "source": "https://rethinkdb.com/feed.xml",
+      "feed_url": "https://rethinkdb.com/feed.xml",
+      "title": "",
+      "saved": 0,
+      "method": "feed"
     }
   ],
-  "fetched": "2026-08-30T22:33:40Z",
+  "fetched": "2026-09-06T19:17:18Z",
   "post_count": 59,
   "feed_nature": "vendor-blog",
   "feed_nature_basis": "path_blog",
