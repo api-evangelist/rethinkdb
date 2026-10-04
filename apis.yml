@@ -37,7 +37,7 @@ tags:
   - NoSQL
   - Document Database
   - Real-Time
-  - Open-Source
+  - Open Source
   - Change Feeds
   - ReQL
 tags_raw:
@@ -48,6 +48,7 @@ tags_raw:
   - Open Source
   - Change Feeds
   - ReQL
+  - Open-Source
 url: >-
   https://raw.githubusercontent.com/api-evangelist/rethinkdb/refs/heads/main/apis.yml
 created: '2026-05-11'
