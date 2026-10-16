@@ -2,8 +2,8 @@
   "repo": "rethinkdb",
   "feeds": [
     {
-      "source": "https://github.com/rethinkdb/rethinkdb/blob/next/LICENSE",
-      "feed_url": "https://github.com/rethinkdb/rethinkdb/blob/next/LICENSE",
+      "source": "https://rethinkdb.com/blog",
+      "feed_url": "https://rethinkdb.com/blog",
       "title": "",
       "saved": 0,
       "method": "none"
@@ -14,9 +14,13 @@
       "title": "",
       "saved": 0,
       "method": "feed"
+    },
+    {
+      "source": "https://github.com/rethinkdb/rethinkdb/blob/next/LICENSE",
+      "error": "HTTPError"
     }
   ],
-  "fetched": "2026-10-03T12:30:02Z",
+  "fetched": "2026-10-10T13:15:00Z",
   "post_count": 59,
   "feed_nature": "vendor-blog",
   "feed_nature_basis": "path_blog",
