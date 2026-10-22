@@ -37,3 +37,16 @@
     detected: '2026-10-19'
   status: not-a-workflow
   arazzo: null
+- slug: rethinkdb-digital-ocean-own
+  label: Digital Ocean (own)
+  partner: digital-ocean
+  partner_name: Digital Ocean (own)
+  category: Databases
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  evidence: https://marketplace.digitalocean.com/apps/rethinkdb
+  source: edge
+  relationship: platform-app
+  status: not-a-workflow
+  arazzo: null
