@@ -1,4 +1,4 @@
-# RethinkDB (rethinkdb)
+# RethinkDB
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -66,65 +66,85 @@
 
 RethinkDB is an open source, distributed document-oriented NoSQL database designed for real-time applications, with push-based change feeds, native JSON storage, and an expressive query language called ReQL. Applications interact with RethinkDB through official client drivers (JavaScript, Python, Java, Ruby) that speak the native JSON driver protocol over TCP, rather than through an HTTP REST API. ReQL also includes an r.http command that lets queries pull data from external HTTP APIs directly.
 
-**APIs.json:** [https://raw.githubusercontent.com/api-evangelist/rethinkdb/refs/heads/main/apis.yml](https://raw.githubusercontent.com/api-evangelist/rethinkdb/refs/heads/main/apis.yml)
+**Areas:** Database · NoSQL · Document Database · Real-Time · Open Source · Change Feeds · ReQL
 
-## Scope
+## RethinkDB on APIs.io
 
-- **Type:** Index
+Everything profiled for RethinkDB is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/rethinkdb/](https://apis.io/providers/rethinkdb/)** — or go straight to one of the APIs or properties below.
 
-## Tags
+### APIs (1)
 
-- Database
-- NoSQL
-- Document Database
-- Real-Time
-- Open Source
-- Change Feeds
-- ReQL
+- [RethinkDB ReQL Driver API](https://apis.io/apis/rethinkdb/reql/) — ReQL (RethinkDB Query Language) is the expressive query language exposed by RethinkDB through official client drivers. Drivers communicate with the…
 
-## Timestamps
+### Published properties
 
-- **Created:** 2026-05-11
-- **Modified:** 2026-05-11
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-## APIs
+#### Security (1)
 
-### RethinkDB ReQL Driver API
+Authentication, trust centre, and vulnerability disclosure.
 
-ReQL (RethinkDB Query Language) is the expressive query language exposed by RethinkDB through official client drivers. Drivers communicate with the RethinkDB server using a native JSON protocol over TCP (default port 28015) rather than HTTP. ReQL supports filtering, joins, aggregations, change feeds, and external HTTP access via the r.http command.
+- [Rethinkdb Domain Security](https://apis.io/security/rethinkdb/rethinkdb-domain-security/)
 
-- **Human URL:** [https://rethinkdb.com/api](https://rethinkdb.com/api)
-- **Base URL:** `tcp://<your-rethinkdb-host>:28015`
+## Where to find this API
 
-#### Tags
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
 
-- ReQL
-- Drivers
-- Change Feeds
-- JSON Protocol
-
-#### Properties
-
-- [Documentation](https://rethinkdb.com/docs)
-- [Re Q L  Command  Reference](https://rethinkdb.com/api)
-- [Introduction to  Re Q L](https://rethinkdb.com/docs/introduction-to-reql/)
-- [External  H T T P  Access](https://rethinkdb.com/docs/external-api-access/)
-- [Driver  Protocol](https://rethinkdb.com/docs/driver-spec/)
-
-## Common Properties
-
-- [LinkedIn](https://www.linkedin.com/company/rethinkdb)
 - [Website](https://rethinkdb.com)
 - [Documentation](https://rethinkdb.com/docs)
-- [API Reference](https://rethinkdb.com/api)
-- [Download](https://rethinkdb.com/docs/install/)
-- [GitHub Organization](https://github.com/rethinkdb)
-- [Source  Code](https://github.com/rethinkdb/rethinkdb)
-- [Documentation  Source](https://github.com/rethinkdb/docs)
-- [Community](https://rethinkdb.com/community/)
-- [License](https://github.com/rethinkdb/rethinkdb/blob/next/LICENSE)
+- [API reference](https://rethinkdb.com/api)
+- [Blog](https://rethinkdb.com/blog)
+- [GitHub](https://github.com/rethinkdb)
 
-## Maintainers
+## API Evangelist rating
 
-**FN:** Kin Lane
-**Email:** kin@apievangelist.com
+**Kin Score 9.1** — minimal · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 66.1 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 2.6 |
+| Developer ergonomics | 17.9 |
+| Access clarity | 0.0 |
+
+**Agent readiness 0.0** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 5.9** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/rethinkdb/](https://apis.io/providers/rethinkdb/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for RethinkDB: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/rethinkdb/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
